@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  container{
+    background: #f6e8e8;
+  }
+  
+  .container .heading{
+  font-size: 3rem;   
+  padding: 2rem 0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0  .5rem 1rem #000;
+  color:#fff;
+  
+  
+  }
+  
+  .container .music-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column ;
+  }
+  
+  .container .music-container .box 
+  {
+    height: 16rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: #be9fa6;
+    border-radius: 1rem;
+    box-shadow: 0  .5rem 1rem #d0a7a7;
+    overflow: hidden;
+  
+  }
+  
+  .container .music-container .box .image
+  {
+    height: 100%;
+    width: 25%;
+  }
+  
+  .container .music-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .container .music-container .box  .music
+  {
+    width: 100%;
+  }
+  
+  .container .music-container .box .music audio
+  {
+    width: 100%;
+    outline: none;
+  }
+  
+  .container .music-container .box .music audio::-webkit-media-controls-enclosure
+  {
+  background: none;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(211, 175, 175, 0.438);
+  }     
+  .gallery-button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+    margin-top: 20px;
+    width: 180px;
+    height: 120%;
+    background: #1DA1F2;
+    border: 2px solid #1DA1F2;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .gallery-button:hover {
+    background-color: #3e8e41; /* Darker green */
+  }
+  
+  .gallery-button:hover{
+    color:#1DA1F2
+  }
+  .gallery-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f0dede ;
+    z-index: -1;
+    transition: .5s;
+  }
+  .gallery-button:hover::before {
+    width: 100%;
+  }
+  

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+  --primary-color:#d5c2ae;
+  --black-color:#000000;
+  --white-color:#d7b093;
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eddff9;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* navbar styling */
+header{
+  position:fixed;
+  width:100%;
+  padding:10px 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+  background-color: #d0c4ec;
+}
+
+nav .navbar{
+  width:90%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 50px;
+  color:var(--primary-color);
+}
+
+nav .navbar .menu{
+  display:flex;
+  position:relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin:8px;
+}
+nav .navbar .menu a{
+  font-size: 20Px;
+  font-weight: 500;
+  color:var(--black-color);
+  padding:6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color:var(--primary-color);
+}
+
+
+/* home section styling */
+.home{
+  height:100vh;
+  width:100%;
+  background:url("images/background1.gif") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.home .home-content{
+  width:90%;
+  height:100%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size:25px;
+  font-weight: 250;
+  color:var(--primary-color);
+}
+.home .text-two{
+  color:var(--black-color);
+  font-size: 70px;
+  font-weight: 500;
+  margin-left: -3px;
+}
+.home .text-three{
+  font-size: 40px;
+  font-style: italic;
+  margin:5px;
+  color:var(--white-color);
+}
+.home .text-four{
+  font-size: 20px;
+  font-weight: 400;
+  margin:5px;
+  color:var(--black-color);
+}
+
+/* About Section Styling */
+section{
+  padding-top:40px;
+}
+section .content{
+  width:80%;
+  margin:40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+section .title{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color:var(--black-color);
+  font-size: 30px;
+  font-weight: 600;
+  position:relative;
+  padding-bottom:8px;
+}
+section .title span::before,
+section .title span::after{
+  content:'';
+  position:absolute;
+  height:3px;
+  width:100%;
+  background:var(--primary-color);
+  left:0;
+  bottom:0;
+}
+section .title span::after{
+  bottom:-7px;
+  width:70%;
+  left:50%;
+  transform:translateX(-50%);
+}
+.about .about-details{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.about .about-details .left{
+  width:45%;
+}
+.about .left img{
+  height:400px;
+  width:400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about .about-details .right{
+  width:55%;
+}
+section .topic{
+  color:var(--black-color);
+  font-size:25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color:var(--black-color);
+}
+
+/* Biography CSS */
+.biography{
+  background-color: #f0f8ff;
+}
+.biography .content{
+  margin:0 auto;
+  padding:20px 0;
+}
+.biography  .text{
+  width:100%;
+  text-align: center;
+  margin:auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px 0;
+}
+
+div.topic{
+  font-size:18px;
+  font-weight: 200;
+  color: var(--primary-color);
+  border: - 0.5px solid cornflowerblue;
+
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+/* Footer CSS */
+footer{
+  background-color : #dacdfa;
+  padding:15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color:var(--white-color);
+}
+footer .text span a{
+  font-weight: 500;
+  color:var(--white-color);
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll To Top Button CSS */
+
+.scroll-button a{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  color:var(--white-color);
+  background:var(--primary-color);
+  padding:10px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0,0,0,0.15);
+  display:none;
+}
